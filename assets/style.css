@@ -25,12 +25,15 @@ main{
     
     background-color: white;
 }
-
+.foto{
+    margin-left: auto;
+    margin-right: auto;
+}
 .foto img{ 
     display: block;
     margin: 0 auto;
-    height: 580px;
-    width: 1018px;
+    height: auto;
+    width: 800px;
     border-radius: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -114,4 +117,94 @@ footer{
 }
 .link a:hover{
     color: blue;
+}
+
+@media (max-width: 1000px){
+    .foto img{ 
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        width: 600px;
+        border-radius: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    header h1{
+        font-size: 40px;
+    }
+    .fim-de-uma-era .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:770px){
+    .foto img{ 
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        width: 500px;
+        border-radius: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    header h1{
+        font-size: 37px;
+    }
+    .fim-de-uma-era .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:640px){
+    .foto img{ 
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        width: 490px;
+        border-radius: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    header h1{
+        font-size: 37px;
+    }
+    .fim-de-uma-era .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width:320px) and (max-width:639px){
+    .foto img{ 
+        display: block;
+        margin: 0 auto;
+        height: 380px;
+        width: 250px;
+        border-radius: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .biogrf-foto{
+        display: none;
+    }
+    header h1{
+        font-size: 18px;
+    }
+    .fim-de-uma-era .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .fim-text{
+        margin-top: 13px;
+    }
 }
